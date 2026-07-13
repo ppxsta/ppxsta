@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="720mm"
+   height="360mm"
+   viewBox="0 0 720 360"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.2 (ebf0e940, 2025-05-08)"
+   sodipodi:docname="PPXSTA.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   role="img"
+   aria-labelledby="title description">
+  <title id="title">Purple animated PPXSTA ASCII art</title>
+  <desc id="description">Transparent-background ASCII art with a purple RGB-keyboard wave and synchronized glow.</desc>
+
+  <!--
+    This SVG has no visible background shape, so the empty area around the ASCII
+    characters remains transparent.
+  -->
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.11094004"
+     inkscape:cx="1649.5398"
+     inkscape:cy="1676.5814"
+     inkscape:window-width="1368"
+     inkscape:window-height="893"
+     inkscape:window-x="1470"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+
+  <style>
+    /*
+      Every visible symbol gets the same colour-and-glow animation. The phase
+      number on each symbol changes when its animation begins. Symbols farther
+      right and lower down receive later phase numbers, creating a diagonal wave
+      like the lighting pattern on an RGB keyboard.
+    */
+    .ascii-character {
+      fill:#3b0764;
+      paint-order:stroke fill;
+      stroke:#3b0764;
+      stroke-width:0;
+      stroke-opacity:0;
+      filter:drop-shadow(0 0 0 transparent);
+      animation:purple-key-wave 3.8s linear infinite;
+      animation-delay:calc(var(--phase) * -34ms);
+    }
+
+    /*
+      Fill changes the character colour. The stroke adds a bright edge and the
+      drop shadows add a softer outer glow. All three become strongest at 50%,
+      when the wave reaches its brightest lavender highlight. Because they are
+      controlled by one keyframe animation, the colour and glow always travel
+      together.
+    */
+    @keyframes purple-key-wave {
+      0%, 100% {
+        fill:#2e1065;
+        stroke:#2e1065;
+        stroke-width:0;
+        stroke-opacity:0;
+        filter:drop-shadow(0 0 0 transparent);
+      }
+      18% {
+        fill:#4c1d95;
+        stroke:#6d28d9;
+        stroke-width:0.2px;
+        stroke-opacity:0.25;
+        filter:drop-shadow(0 0 1px rgba(76, 29, 149, 0.35));
+      }
+      36% {
+        fill:#6d28d9;
+        stroke:#a78bfa;
+        stroke-width:0.65px;
+        stroke-opacity:0.55;
+        filter:drop-shadow(0 0 2px rgba(109, 40, 217, 0.65));
+      }
+      50% {
+        fill:#d8b4fe;
+        stroke:#f3e8ff;
+        stroke-width:1.35px;
+        stroke-opacity:0.9;
+        filter:drop-shadow(0 0 2px #d8b4fe) drop-shadow(0 0 6px #7e22ce);
+      }
+      64% {
+        fill:#9333ea;
+        stroke:#c084fc;
+        stroke-width:0.7px;
+        stroke-opacity:0.6;
+        filter:drop-shadow(0 0 2px rgba(147, 51, 234, 0.7));
+      }
+      82% {
+        fill:#581c87;
+        stroke:#7e22ce;
+        stroke-width:0.25px;
+        stroke-opacity:0.3;
+        filter:drop-shadow(0 0 1px rgba(88, 28, 135, 0.4));
+      }
+    }
+
+    /* Reduce-motion visitors see a steady purple colour with a soft still glow. */
+    @media (prefers-reduced-motion: reduce) {
+      .ascii-character {
+        animation:none;
+        fill:#7e22ce;
+        stroke:#a855f7;
+        stroke-width:0.45px;
+        stroke-opacity:0.45;
+        filter:drop-shadow(0 0 2px rgba(126, 34, 206, 0.55));
+      }
+    }
+  </style>
+
+  <defs
+     id="defs1">
+    <rect
+       x="216.81542"
+       y="208.14281"
+       width="2250.5441"
+       height="490.00286"
+       id="rect1" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <!--
+      Each visible character below is inside its own tspan element. The
+      ascii-character class connects it to the CSS animation, while its phase
+      number staggers the timing. Spaces remain plain text because invisible
+      spaces do not need colour or glow.
+    -->
+    <text
+       xml:space="preserve"
+       transform="matrix(0.37775115,0,0,0.37775115,9.0558271,34.348873)"
+       id="text1"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:33.3333px;font-family:Monospace;-inkscape-font-specification:'Monospace, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect1);display:inline;fill:#3b0764;stroke-width:13.183;stroke-opacity:0.996078"><tspan
+         x="216.81445"
+         y="238.21109"
+         id="tspan1">   <tspan class="ascii-character" style="--phase:3">▄</tspan><tspan class="ascii-character" style="--phase:4">▄</tspan><tspan class="ascii-character" style="--phase:5">▄</tspan><tspan class="ascii-character" style="--phase:6">░</tspan><tspan class="ascii-character" style="--phase:7">░</tspan><tspan class="ascii-character" style="--phase:8">░</tspan><tspan class="ascii-character" style="--phase:9">░</tspan><tspan class="ascii-character" style="--phase:10">▄</tspan>    <tspan class="ascii-character" style="--phase:15">▄</tspan><tspan class="ascii-character" style="--phase:16">▄</tspan><tspan class="ascii-character" style="--phase:17">▄</tspan><tspan class="ascii-character" style="--phase:18">░</tspan><tspan class="ascii-character" style="--phase:19">░</tspan><tspan class="ascii-character" style="--phase:20">░</tspan><tspan class="ascii-character" style="--phase:21">░</tspan><tspan class="ascii-character" style="--phase:22">▄</tspan> <tspan class="ascii-character" style="--phase:24">░</tspan><tspan class="ascii-character" style="--phase:25">░</tspan><tspan class="ascii-character" style="--phase:26">▄</tspan>    <tspan class="ascii-character" style="--phase:31">▄</tspan><tspan class="ascii-character" style="--phase:32">░</tspan><tspan class="ascii-character" style="--phase:33">░</tspan><tspan class="ascii-character" style="--phase:34">▀</tspan>    <tspan class="ascii-character" style="--phase:39">▄</tspan><tspan class="ascii-character" style="--phase:40">░</tspan><tspan class="ascii-character" style="--phase:41">░</tspan><tspan class="ascii-character" style="--phase:42">░</tspan><tspan class="ascii-character" style="--phase:43">░</tspan><tspan class="ascii-character" style="--phase:44">░</tspan><tspan class="ascii-character" style="--phase:45">░</tspan><tspan class="ascii-character" style="--phase:46">░</tspan><tspan class="ascii-character" style="--phase:47">▄</tspan><tspan class="ascii-character" style="--phase:48">▄</tspan>   <tspan class="ascii-character" style="--phase:52">▄</tspan><tspan class="ascii-character" style="--phase:53">▄</tspan><tspan class="ascii-character" style="--phase:54">░</tspan><tspan class="ascii-character" style="--phase:55">░</tspan><tspan class="ascii-character" style="--phase:56">░</tspan><tspan class="ascii-character" style="--phase:57">▄</tspan><tspan class="ascii-character" style="--phase:58">▄</tspan><tspan class="ascii-character" style="--phase:59">░</tspan><tspan class="ascii-character" style="--phase:60">░</tspan>     <tspan class="ascii-character" style="--phase:66">▄</tspan><tspan class="ascii-character" style="--phase:67">░</tspan><tspan class="ascii-character" style="--phase:68">▄</tspan><tspan class="ascii-character" style="--phase:69">▄</tspan> <tspan class="ascii-character" style="--phase:71">▄</tspan><tspan class="ascii-character" style="--phase:72">▄</tspan>
+</tspan><tspan
+         x="216.81445"
+         y="279.87772"
+         id="tspan2"><tspan class="ascii-character" style="--phase:4">▄</tspan><tspan class="ascii-character" style="--phase:5">▒</tspan><tspan class="ascii-character" style="--phase:6">▒</tspan><tspan class="ascii-character" style="--phase:7">▒</tspan><tspan class="ascii-character" style="--phase:8">▀</tspan><tspan class="ascii-character" style="--phase:9">▀</tspan>  <tspan class="ascii-character" style="--phase:12">▀</tspan><tspan class="ascii-character" style="--phase:13">▒</tspan><tspan class="ascii-character" style="--phase:14">▒</tspan><tspan class="ascii-character" style="--phase:15">▌</tspan><tspan class="ascii-character" style="--phase:16">▄</tspan><tspan class="ascii-character" style="--phase:17">▒</tspan><tspan class="ascii-character" style="--phase:18">▒</tspan><tspan class="ascii-character" style="--phase:19">▒</tspan><tspan class="ascii-character" style="--phase:20">▀</tspan><tspan class="ascii-character" style="--phase:21">▀</tspan>  <tspan class="ascii-character" style="--phase:24">▀</tspan><tspan class="ascii-character" style="--phase:25">▒</tspan><tspan class="ascii-character" style="--phase:26">▒</tspan><tspan class="ascii-character" style="--phase:27">▌</tspan> <tspan class="ascii-character" style="--phase:29">▒</tspan><tspan class="ascii-character" style="--phase:30">▒</tspan><tspan class="ascii-character" style="--phase:31">▌</tspan>  <tspan class="ascii-character" style="--phase:34">▐</tspan><tspan class="ascii-character" style="--phase:35">▒</tspan><tspan class="ascii-character" style="--phase:36">▒</tspan><tspan class="ascii-character" style="--phase:37">▌</tspan>    <tspan class="ascii-character" style="--phase:42">▄</tspan><tspan class="ascii-character" style="--phase:43">▒</tspan><tspan class="ascii-character" style="--phase:44">▒</tspan><tspan class="ascii-character" style="--phase:45">▒</tspan><tspan class="ascii-character" style="--phase:46">▀</tspan><tspan class="ascii-character" style="--phase:47">▀</tspan><tspan class="ascii-character" style="--phase:48">▒</tspan><tspan class="ascii-character" style="--phase:49">▒</tspan><tspan class="ascii-character" style="--phase:50">▒</tspan><tspan class="ascii-character" style="--phase:51">▒</tspan><tspan class="ascii-character" style="--phase:52">▒</tspan><tspan class="ascii-character" style="--phase:53">▀</tspan> <tspan class="ascii-character" style="--phase:55">▒</tspan><tspan class="ascii-character" style="--phase:56">▒</tspan><tspan class="ascii-character" style="--phase:57">▒</tspan><tspan class="ascii-character" style="--phase:58">▒</tspan><tspan class="ascii-character" style="--phase:59">▒</tspan><tspan class="ascii-character" style="--phase:60">▒</tspan><tspan class="ascii-character" style="--phase:61">▒</tspan><tspan class="ascii-character" style="--phase:62">▒</tspan><tspan class="ascii-character" style="--phase:63">▒</tspan><tspan class="ascii-character" style="--phase:64">▌</tspan>  <tspan class="ascii-character" style="--phase:67">▄</tspan><tspan class="ascii-character" style="--phase:68">▒</tspan><tspan class="ascii-character" style="--phase:69">▒</tspan><tspan class="ascii-character" style="--phase:70">▒</tspan><tspan class="ascii-character" style="--phase:71">▒</tspan><tspan class="ascii-character" style="--phase:72">▒</tspan><tspan class="ascii-character" style="--phase:73">▒</tspan><tspan class="ascii-character" style="--phase:74">▒</tspan><tspan class="ascii-character" style="--phase:75">▒</tspan><tspan class="ascii-character" style="--phase:76">▒</tspan>
+</tspan><tspan
+         x="216.81445"
+         y="321.54434"
+         id="tspan3"><tspan class="ascii-character" style="--phase:8">▓</tspan><tspan class="ascii-character" style="--phase:9">▓</tspan><tspan class="ascii-character" style="--phase:10">▓</tspan><tspan class="ascii-character" style="--phase:11">▄</tspan>  <tspan class="ascii-character" style="--phase:14">▄</tspan><tspan class="ascii-character" style="--phase:15">▄</tspan><tspan class="ascii-character" style="--phase:16">▓</tspan><tspan class="ascii-character" style="--phase:17">▓</tspan><tspan class="ascii-character" style="--phase:18">▀</tspan> <tspan class="ascii-character" style="--phase:20">▓</tspan><tspan class="ascii-character" style="--phase:21">▓</tspan><tspan class="ascii-character" style="--phase:22">▓</tspan><tspan class="ascii-character" style="--phase:23">▄</tspan>  <tspan class="ascii-character" style="--phase:26">▄</tspan><tspan class="ascii-character" style="--phase:27">▄</tspan><tspan class="ascii-character" style="--phase:28">▓</tspan><tspan class="ascii-character" style="--phase:29">▓</tspan><tspan class="ascii-character" style="--phase:30">▀</tspan>  <tspan class="ascii-character" style="--phase:33">▐</tspan><tspan class="ascii-character" style="--phase:34">▓</tspan><tspan class="ascii-character" style="--phase:35">▓</tspan> <tspan class="ascii-character" style="--phase:37">▄</tspan><tspan class="ascii-character" style="--phase:38">▓</tspan><tspan class="ascii-character" style="--phase:39">▓</tspan><tspan class="ascii-character" style="--phase:40">▀</tspan>     <tspan class="ascii-character" style="--phase:46">▓</tspan><tspan class="ascii-character" style="--phase:47">▓</tspan><tspan class="ascii-character" style="--phase:48">▓</tspan><tspan class="ascii-character" style="--phase:49">▓</tspan><tspan class="ascii-character" style="--phase:50">▄</tspan>  <tspan class="ascii-character" style="--phase:53">▀</tspan><tspan class="ascii-character" style="--phase:54">▓</tspan><tspan class="ascii-character" style="--phase:55">▀</tspan>   <tspan class="ascii-character" style="--phase:59">▓</tspan><tspan class="ascii-character" style="--phase:60">▀</tspan><tspan class="ascii-character" style="--phase:61">▓</tspan><tspan class="ascii-character" style="--phase:62">▓</tspan><tspan class="ascii-character" style="--phase:63">▓</tspan><tspan class="ascii-character" style="--phase:64">▓</tspan><tspan class="ascii-character" style="--phase:65">▓</tspan><tspan class="ascii-character" style="--phase:66">▀</tspan><tspan class="ascii-character" style="--phase:67">▀</tspan>  <tspan class="ascii-character" style="--phase:70">▓</tspan><tspan class="ascii-character" style="--phase:71">▓</tspan><tspan class="ascii-character" style="--phase:72">▓</tspan><tspan class="ascii-character" style="--phase:73">▀</tspan><tspan class="ascii-character" style="--phase:74">▀</tspan><tspan class="ascii-character" style="--phase:75">▀</tspan><tspan class="ascii-character" style="--phase:76">▓</tspan><tspan class="ascii-character" style="--phase:77">▓</tspan><tspan class="ascii-character" style="--phase:78">▓</tspan><tspan class="ascii-character" style="--phase:79">▓</tspan><tspan class="ascii-character" style="--phase:80">▌</tspan>
+</tspan><tspan
+         x="216.81445"
+         y="363.21097"
+         id="tspan4"><tspan class="ascii-character" style="--phase:12">▐</tspan><tspan class="ascii-character" style="--phase:13">█</tspan><tspan class="ascii-character" style="--phase:14">█</tspan><tspan class="ascii-character" style="--phase:15">█</tspan><tspan class="ascii-character" style="--phase:16">█</tspan><tspan class="ascii-character" style="--phase:17">█</tspan><tspan class="ascii-character" style="--phase:18">█</tspan><tspan class="ascii-character" style="--phase:19">▀</tspan><tspan class="ascii-character" style="--phase:20">▀</tspan>   <tspan class="ascii-character" style="--phase:24">▐</tspan><tspan class="ascii-character" style="--phase:25">█</tspan><tspan class="ascii-character" style="--phase:26">█</tspan><tspan class="ascii-character" style="--phase:27">█</tspan><tspan class="ascii-character" style="--phase:28">█</tspan><tspan class="ascii-character" style="--phase:29">█</tspan><tspan class="ascii-character" style="--phase:30">█</tspan><tspan class="ascii-character" style="--phase:31">▀</tspan><tspan class="ascii-character" style="--phase:32">▀</tspan>     <tspan class="ascii-character" style="--phase:38">▀</tspan><tspan class="ascii-character" style="--phase:39">█</tspan><tspan class="ascii-character" style="--phase:40">█</tspan><tspan class="ascii-character" style="--phase:41">█</tspan><tspan class="ascii-character" style="--phase:42">█</tspan><tspan class="ascii-character" style="--phase:43">▀</tspan>       <tspan class="ascii-character" style="--phase:51">▀</tspan><tspan class="ascii-character" style="--phase:52">▀</tspan><tspan class="ascii-character" style="--phase:53">█</tspan><tspan class="ascii-character" style="--phase:54">█</tspan><tspan class="ascii-character" style="--phase:55">█</tspan><tspan class="ascii-character" style="--phase:56">█</tspan><tspan class="ascii-character" style="--phase:57">▄</tspan><tspan class="ascii-character" style="--phase:58">▄</tspan>      <tspan class="ascii-character" style="--phase:65">▐</tspan><tspan class="ascii-character" style="--phase:66">█</tspan><tspan class="ascii-character" style="--phase:67">█</tspan><tspan class="ascii-character" style="--phase:68">█</tspan><tspan class="ascii-character" style="--phase:69">▌</tspan>   <tspan class="ascii-character" style="--phase:73">█</tspan><tspan class="ascii-character" style="--phase:74">█</tspan><tspan class="ascii-character" style="--phase:75">█</tspan>     <tspan class="ascii-character" style="--phase:81">█</tspan><tspan class="ascii-character" style="--phase:82">█</tspan><tspan class="ascii-character" style="--phase:83">█</tspan> 
+</tspan><tspan
+         x="216.81445"
+         y="404.8776"
+         id="tspan5"> <tspan class="ascii-character" style="--phase:17">▐</tspan><tspan class="ascii-character" style="--phase:18">▓</tspan><tspan class="ascii-character" style="--phase:19">▓</tspan><tspan class="ascii-character" style="--phase:20">▓</tspan>        <tspan class="ascii-character" style="--phase:29">▐</tspan><tspan class="ascii-character" style="--phase:30">▓</tspan><tspan class="ascii-character" style="--phase:31">▓</tspan><tspan class="ascii-character" style="--phase:32">▓</tspan>         <tspan class="ascii-character" style="--phase:42">▓</tspan><tspan class="ascii-character" style="--phase:43">▓</tspan><tspan class="ascii-character" style="--phase:44">▓</tspan><tspan class="ascii-character" style="--phase:45">▀</tspan><tspan class="ascii-character" style="--phase:46">▓</tspan><tspan class="ascii-character" style="--phase:47">▓</tspan><tspan class="ascii-character" style="--phase:48">▄</tspan>     <tspan class="ascii-character" style="--phase:54">▄</tspan><tspan class="ascii-character" style="--phase:55">▓</tspan>    <tspan class="ascii-character" style="--phase:60">▀</tspan><tspan class="ascii-character" style="--phase:61">▓</tspan><tspan class="ascii-character" style="--phase:62">▓</tspan><tspan class="ascii-character" style="--phase:63">▓</tspan>      <tspan class="ascii-character" style="--phase:70">▓</tspan><tspan class="ascii-character" style="--phase:71">▓</tspan><tspan class="ascii-character" style="--phase:72">▓</tspan>   <tspan class="ascii-character" style="--phase:76">▐</tspan><tspan class="ascii-character" style="--phase:77">▓</tspan><tspan class="ascii-character" style="--phase:78">▓</tspan>      <tspan class="ascii-character" style="--phase:85">▓</tspan><tspan class="ascii-character" style="--phase:86">▓</tspan><tspan class="ascii-character" style="--phase:87">▌</tspan> 
+</tspan><tspan
+         x="216.81445"
+         y="446.54422"
+         id="tspan6">  <tspan class="ascii-character" style="--phase:22">▒</tspan><tspan class="ascii-character" style="--phase:23">▒</tspan><tspan class="ascii-character" style="--phase:24">▒</tspan><tspan class="ascii-character" style="--phase:25">▌</tspan>        <tspan class="ascii-character" style="--phase:34">▒</tspan><tspan class="ascii-character" style="--phase:35">▒</tspan><tspan class="ascii-character" style="--phase:36">▒</tspan><tspan class="ascii-character" style="--phase:37">▌</tspan>       <tspan class="ascii-character" style="--phase:45">▐</tspan><tspan class="ascii-character" style="--phase:46">▒</tspan><tspan class="ascii-character" style="--phase:47">▒</tspan><tspan class="ascii-character" style="--phase:48">▌</tspan> <tspan class="ascii-character" style="--phase:50">▒</tspan><tspan class="ascii-character" style="--phase:51">▒</tspan><tspan class="ascii-character" style="--phase:52">▒</tspan><tspan class="ascii-character" style="--phase:53">▌</tspan>  <tspan class="ascii-character" style="--phase:56">▄</tspan><tspan class="ascii-character" style="--phase:57">▒</tspan><tspan class="ascii-character" style="--phase:58">▒</tspan><tspan class="ascii-character" style="--phase:59">▒</tspan><tspan class="ascii-character" style="--phase:60">▒</tspan><tspan class="ascii-character" style="--phase:61">▒</tspan><tspan class="ascii-character" style="--phase:62">▄</tspan><tspan class="ascii-character" style="--phase:63">▄</tspan><tspan class="ascii-character" style="--phase:64">▒</tspan><tspan class="ascii-character" style="--phase:65">▒</tspan><tspan class="ascii-character" style="--phase:66">▒</tspan><tspan class="ascii-character" style="--phase:67">▒</tspan><tspan class="ascii-character" style="--phase:68">▒</tspan>    <tspan class="ascii-character" style="--phase:73">▐</tspan><tspan class="ascii-character" style="--phase:74">▒</tspan><tspan class="ascii-character" style="--phase:75">▒</tspan><tspan class="ascii-character" style="--phase:76">▌</tspan>   <tspan class="ascii-character" style="--phase:80">▒</tspan><tspan class="ascii-character" style="--phase:81">▒</tspan><tspan class="ascii-character" style="--phase:82">▒</tspan><tspan class="ascii-character" style="--phase:83">▄</tspan>    <tspan class="ascii-character" style="--phase:88">▄</tspan><tspan class="ascii-character" style="--phase:89">▒</tspan><tspan class="ascii-character" style="--phase:90">▒</tspan><tspan class="ascii-character" style="--phase:91">▒</tspan> 
+</tspan><tspan
+         x="216.81445"
+         y="488.21085"
+         id="tspan7">  <tspan class="ascii-character" style="--phase:26">▐</tspan><tspan class="ascii-character" style="--phase:27">░</tspan><tspan class="ascii-character" style="--phase:28">░</tspan><tspan class="ascii-character" style="--phase:29">░</tspan>        <tspan class="ascii-character" style="--phase:38">▐</tspan><tspan class="ascii-character" style="--phase:39">░</tspan><tspan class="ascii-character" style="--phase:40">░</tspan><tspan class="ascii-character" style="--phase:41">░</tspan>       <tspan class="ascii-character" style="--phase:49">█</tspan><tspan class="ascii-character" style="--phase:50">░</tspan><tspan class="ascii-character" style="--phase:51">░</tspan>  <tspan class="ascii-character" style="--phase:54">▐</tspan><tspan class="ascii-character" style="--phase:55">░</tspan><tspan class="ascii-character" style="--phase:56">░</tspan><tspan class="ascii-character" style="--phase:57">█</tspan> <tspan class="ascii-character" style="--phase:59">░</tspan><tspan class="ascii-character" style="--phase:60">░</tspan><tspan class="ascii-character" style="--phase:61">░</tspan><tspan class="ascii-character" style="--phase:62">░</tspan><tspan class="ascii-character" style="--phase:63">░</tspan><tspan class="ascii-character" style="--phase:64">░</tspan><tspan class="ascii-character" style="--phase:65">░</tspan><tspan class="ascii-character" style="--phase:66">░</tspan><tspan class="ascii-character" style="--phase:67">░</tspan><tspan class="ascii-character" style="--phase:68">░</tspan><tspan class="ascii-character" style="--phase:69">░</tspan><tspan class="ascii-character" style="--phase:70">░</tspan><tspan class="ascii-character" style="--phase:71">░</tspan><tspan class="ascii-character" style="--phase:72">▌</tspan>    <tspan class="ascii-character" style="--phase:77">░</tspan><tspan class="ascii-character" style="--phase:78">░</tspan><tspan class="ascii-character" style="--phase:79">▀</tspan>     <tspan class="ascii-character" style="--phase:85">░</tspan><tspan class="ascii-character" style="--phase:86">░</tspan><tspan class="ascii-character" style="--phase:87">░</tspan><tspan class="ascii-character" style="--phase:88">░</tspan><tspan class="ascii-character" style="--phase:89">▄</tspan><tspan class="ascii-character" style="--phase:90">▄</tspan><tspan class="ascii-character" style="--phase:91">░</tspan><tspan class="ascii-character" style="--phase:92">░</tspan><tspan class="ascii-character" style="--phase:93">░</tspan><tspan class="ascii-character" style="--phase:94">░</tspan><tspan class="ascii-character" style="--phase:95">░</tspan><tspan class="ascii-character" style="--phase:96">▌</tspan>
+</tspan><tspan
+         x="216.81445"
+         y="529.87747"
+         id="tspan8">   <tspan class="ascii-character" style="--phase:31">▀</tspan><tspan class="ascii-character" style="--phase:32">█</tspan><tspan class="ascii-character" style="--phase:33">█</tspan>         <tspan class="ascii-character" style="--phase:43">▀</tspan><tspan class="ascii-character" style="--phase:44">█</tspan><tspan class="ascii-character" style="--phase:45">█</tspan>       <tspan class="ascii-character" style="--phase:53">▀</tspan><tspan class="ascii-character" style="--phase:54">█</tspan><tspan class="ascii-character" style="--phase:55">▀</tspan>   <tspan class="ascii-character" style="--phase:59">▀</tspan><tspan class="ascii-character" style="--phase:60">█</tspan><tspan class="ascii-character" style="--phase:61">▀</tspan> <tspan class="ascii-character" style="--phase:63">▀</tspan><tspan class="ascii-character" style="--phase:64">▀</tspan><tspan class="ascii-character" style="--phase:65">█</tspan><tspan class="ascii-character" style="--phase:66">█</tspan><tspan class="ascii-character" style="--phase:67">█</tspan><tspan class="ascii-character" style="--phase:68">█</tspan><tspan class="ascii-character" style="--phase:69">█</tspan><tspan class="ascii-character" style="--phase:70">█</tspan><tspan class="ascii-character" style="--phase:71">█</tspan><tspan class="ascii-character" style="--phase:72">█</tspan><tspan class="ascii-character" style="--phase:73">▀</tspan><tspan class="ascii-character" style="--phase:74">▀</tspan><tspan class="ascii-character" style="--phase:75">▀</tspan>     <tspan class="ascii-character" style="--phase:81">█</tspan><tspan class="ascii-character" style="--phase:82">▀</tspan>       <tspan class="ascii-character" style="--phase:90">▀</tspan><tspan class="ascii-character" style="--phase:91">█</tspan><tspan class="ascii-character" style="--phase:92">█</tspan><tspan class="ascii-character" style="--phase:93">█</tspan><tspan class="ascii-character" style="--phase:94">█</tspan><tspan class="ascii-character" style="--phase:95">▀</tspan> <tspan class="ascii-character" style="--phase:97">▀</tspan><tspan class="ascii-character" style="--phase:98">█</tspan><tspan class="ascii-character" style="--phase:99">█</tspan><tspan class="ascii-character" style="--phase:100">▀</tspan></tspan></text>
+  </g>
+</svg>
