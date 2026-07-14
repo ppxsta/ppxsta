@@ -1,6 +1,7 @@
-!(./ppxsta/PPXSTA_Animated1.svg)
+<p align="center">
+  <img src="./assets/PPXSTA_Animated1.svg" alt="Animated ASCII Art" width="600">
+</p>
 
-## Hi there 👋
 
 <!--
 **ppxsta/ppxsta** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
