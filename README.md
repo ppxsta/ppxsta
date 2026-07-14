@@ -1,3 +1,5 @@
+!(./ppxsta/PPXSTA_Animated1.svg)
+
 ## Hi there 👋
 
 <!--
